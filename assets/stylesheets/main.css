@@ -60,14 +60,6 @@ table {
   height: 8px;
 }
 
-/*::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.3);
-}*/
 
 /* trial */
 
@@ -85,12 +77,12 @@ body {
 }
 
 @keyframe myfadeInAnimation {
-    from {opacity: 0;}
+    from {opacity: .3;}
     to {opacity: 1;}
 }
 
 @-webkit-keyframes myfadeInAnimation {
-    from {opacity: 0;}
+    from {opacity: .3;}
     to {opacity: 1;}
 }
 
@@ -123,12 +115,35 @@ body {
   margin: 70px 0 30px 86%;
 }
 
-.flex {
+.center {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   align-items: center;
+}
+
+#window {
+  width: 74%;
+  position: absolute;
+}
+
+.fit {
+  width: 74%; 
+  min-height: 700px; 
+  background-size: cover; 
+  opacity: 0.9;
+}
+
+.fit p {
+  position: absolute;
+  margin: 30% 0 0 10%;
+  width: 60%;
+}
+
+.original {
+  margin: 20vh 0 30vh 10%;
+  width: 60%;
 }
 
 body {
